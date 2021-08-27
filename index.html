@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Responive Web Page</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            color: white;
+            background-color: grey;
+            font-family: "Poppins", sans-serif;
+        }
+
+        .container {
+            width: 100vw;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 1em;
+            background-color: #0077b6;
+            position: fixed;
+        }
+
+        .circle {
+            display: flex;
+            flex-direction: row-reverse;
+            margin: 0.36em 0;
+            padding-right: 5%;
+        }
+
+        #c1 {
+            width: 2em;
+            height: 2em;
+            background-color: purple;
+            border-radius: 50%;
+        }
+
+        #c2 {
+            width: 2em;
+            height: 2em;
+            background-color: orange;
+            border-radius: 50%;
+            margin: 0 0.3em;
+        }
+
+        #c3 {
+            width: 2em;
+            height: 2em;
+            background-color: red;
+            border-radius: 50%;
+            margin: 0 0.1em;
+        }
+
+        .container h1 {
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 200;
+            padding-left: 4%;
+        }
+
+        .heading {
+            background-color: #023e8a;
+            padding-top: 5em;
+            padding-bottom: 3em;
+            text-align: center;
+        }
+
+        .heading h1 {
+            margin: 1em 0em;
+        }
+
+        .heading p {
+            padding-bottom: 2em;
+            margin: 2em 6em;
+            position: relative;
+            text-align: center;
+        }
+
+        .middle-section {
+            display: flex;
+            justify-content: space-evenly;
+            background-color: white;
+            padding: 1em 0;
+        }
+
+        .middle-section img {
+            margin: 3em 1em;
+            width: 21em;
+            height: 16em;
+        }
+
+        .middle-section p {
+            width: 20em;
+            margin: 4em 0;
+            color: black;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #0077b6;
+        }
+
+        .last-section {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-evenly;
+            background-color: #f5e2c8;
+            padding: 3em 0;
+            border-bottom: 2px solid black;
+        }
+
+        .last-section img {
+            margin: 3em 1em;
+            width: 21em;
+            height: 16em;
+        }
+
+        .last-section p {
+            width: 20em;
+            /*   padding: 0 1em; */
+            margin: 4em 0;
+            color: black;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .container {
+                display: flex;
+                justify-content: center;
+                position: fixed;
+            }
+
+            .container h1 {
+                text-transform: capitalize;
+                font-weight: 200;
+                padding-right: 12%;
+            }
+
+            .circle {
+                display: none;
+            }
+
+            .middle-section {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+
+            .middle-section img {
+                width: 21em;
+                height: 16em;
+            }
+
+            .last-section {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Pranab's</h1>
+        <div class="circle">
+            <div id="c1"></div>
+            <div id="c2"></div>
+            <div id="c3"></div>
+        </div>
+    </div>
+
+    <div class="heading">
+        <h1>Web Dev Solution</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porttitor lorem ut magna rutrum, sit amet
+            consectetur elit posuere. Morbi eu sollicitudin justo.</p>
+    </div>
+
+    <div class="middle-section">
+        <img src="https://images.pexels.com/photos/1181216/pexels-photo-1181216.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+            alt="laptop image">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porttitor lorem ut magna rutrum, sit amet
+            consectetur elit posuere. Morbi eu sollicitudin justo.Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Vivamus porttitor lorem ut magna rutrum, sit amet consectetur elit posuere. Morbi eu sollicitudin
+            justo.</p>
+    </div>
+
+    <div class="last-section">
+        <img src="https://images.unsplash.com/photo-1560617544-b4f287789e24?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fG1vYmlsZSUyMHBob25lfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+            alt="iphone image">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porttitor lorem ut magna rutrum, sit amet
+            consectetur elit posuere. Morbi eu sollicitudin justo.Lorem ipsum dolor sit amet.</p>
+    </div>
+    <footer>
+        <p>Copyright &copy;Virgo Developer(2021)</p>
+    </footer>
+</body>
+
+</html>
